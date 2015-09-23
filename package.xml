@@ -6,7 +6,11 @@
  <name>Braintree</name>
  <channel>pear.silverorange.com</channel>
  <summary>The Braintree PHP library provides integration access to the Braintree Gateway.</summary>
- <description>The Braintree PHP library provides integration access to the Braintree Gateway.</description>
+ <description>The Braintree PHP library provides integration access to the Braintree Gateway.
+
+This package contains the latest version of the SDK modified slightly for installation as a PEAR package. Modifications are: - reduce required PHP version - the tests require PHP 5.4 but    the SDK itself runs fine on PHP 5.3.
+ - adjust the installation directories to match PSR-0.
+ </description>
  <lead>
   <name>Mike Gauthier</name>
   <user>gauthierm</user>
@@ -14,7 +18,7 @@
   <active>yes</active>
  </lead>
  <date>2015-09-23</date>
- <time>15:07:28</time>
+ <time>16:09:17</time>
  <version>
   <release>3.5.0</release>
   <api>3.5.0</api>
