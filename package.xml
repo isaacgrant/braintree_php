@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.5" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Braintree</name>
+ <channel>pear.silverorange.com</channel>
+ <summary>The Braintree PHP library provides integration access to the Braintree Gateway.</summary>
+ <description>The Braintree PHP library provides integration access to the Braintree Gateway.
+
+This package contains the latest version of the SDK modified slightly for installation as a PEAR package. Modifications are: - reduce required PHP version - the tests require PHP 5.4 but    the SDK itself runs fine on PHP 5.3.
+ - adjust the installation directories to match PSR-0.
+ </description>
+ <lead>
+  <name>Mike Gauthier</name>
+  <user>gauthierm</user>
+  <email>mike@silverorange.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2015-09-23</date>
+ <time>16:09:17</time>
+ <version>
+  <release>3.5.0</release>
+  <api>3.5.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>stable</api>
+ </stability>
+ <license uri="https://github.com/braintree/braintree_php/blob/master/LICENSE">MIT License</license>
+ <notes>
+Mirror official release.
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <dir name="lib">
+    <dir name="Braintree">
+     <dir name="Dispute">
+      <file baseinstalldir="/" name="TransactionDetails.php" role="php" />
+     </dir> <!-- /lib/Braintree/Dispute -->
+     <dir name="Error">
+      <file baseinstalldir="/" name="Codes.php" role="php" />
+      <file baseinstalldir="/" name="ErrorCollection.php" role="php" />
+      <file baseinstalldir="/" name="Validation.php" role="php" />
+      <file baseinstalldir="/" name="ValidationErrorCollection.php" role="php" />
+     </dir> <!-- /lib/Braintree/Error -->
+     <dir name="Exception">
+      <file baseinstalldir="/" name="Authentication.php" role="php" />
+      <file baseinstalldir="/" name="Authorization.php" role="php" />
+      <file baseinstalldir="/" name="Configuration.php" role="php" />
+      <file baseinstalldir="/" name="DownForMaintenance.php" role="php" />
+      <file baseinstalldir="/" name="ForgedQueryString.php" role="php" />
+      <file baseinstalldir="/" name="InvalidChallenge.php" role="php" />
+      <file baseinstalldir="/" name="InvalidSignature.php" role="php" />
+      <file baseinstalldir="/" name="NotFound.php" role="php" />
+      <file baseinstalldir="/" name="ServerError.php" role="php" />
+      <file baseinstalldir="/" name="SSLCaFileNotFound.php" role="php" />
+      <file baseinstalldir="/" name="SSLCertificate.php" role="php" />
+      <file baseinstalldir="/" name="TestOperationPerformedInProduction.php" role="php" />
+      <file baseinstalldir="/" name="Unexpected.php" role="php" />
+      <file baseinstalldir="/" name="UpgradeRequired.php" role="php" />
+      <file baseinstalldir="/" name="ValidationsFailed.php" role="php" />
+     </dir> <!-- /lib/Braintree/Exception -->
+     <dir name="MerchantAccount">
+      <file baseinstalldir="/" name="AddressDetails.php" role="php" />
+      <file baseinstalldir="/" name="BusinessDetails.php" role="php" />
+      <file baseinstalldir="/" name="FundingDetails.php" role="php" />
+      <file baseinstalldir="/" name="IndividualDetails.php" role="php" />
+     </dir> <!-- /lib/Braintree/MerchantAccount -->
+     <dir name="Result">
+      <file baseinstalldir="/" name="CreditCardVerification.php" role="php" />
+      <file baseinstalldir="/" name="Error.php" role="php" />
+      <file baseinstalldir="/" name="Successful.php" role="php" />
+     </dir> <!-- /lib/Braintree/Result -->
+     <dir name="Subscription">
+      <file baseinstalldir="/" name="StatusDetails.php" role="php" />
+     </dir> <!-- /lib/Braintree/Subscription -->
+     <dir name="Test">
+      <file baseinstalldir="/" name="CreditCardNumbers.php" role="php" />
+      <file baseinstalldir="/" name="MerchantAccount.php" role="php" />
+      <file baseinstalldir="/" name="Nonces.php" role="php" />
+      <file baseinstalldir="/" name="Transaction.php" role="php" />
+      <file baseinstalldir="/" name="TransactionAmounts.php" role="php" />
+      <file baseinstalldir="/" name="VenmoSdk.php" role="php" />
+     </dir> <!-- /lib/Braintree/Test -->
+     <dir name="Transaction">
+      <file baseinstalldir="/" name="AddressDetails.php" role="php" />
+      <file baseinstalldir="/" name="AndroidPayCardDetails.php" role="php" />
+      <file baseinstalldir="/" name="ApplePayCardDetails.php" role="php" />
+      <file baseinstalldir="/" name="CoinbaseDetails.php" role="php" />
+      <file baseinstalldir="/" name="CreditCardDetails.php" role="php" />
+      <file baseinstalldir="/" name="CustomerDetails.php" role="php" />
+      <file baseinstalldir="/" name="EuropeBankAccountDetails.php" role="php" />
+      <file baseinstalldir="/" name="PayPalDetails.php" role="php" />
+      <file baseinstalldir="/" name="StatusDetails.php" role="php" />
+      <file baseinstalldir="/" name="SubscriptionDetails.php" role="php" />
+     </dir> <!-- /lib/Braintree/Transaction -->
+     <dir name="Xml">
+      <file baseinstalldir="/" name="Generator.php" role="php" />
+      <file baseinstalldir="/" name="Parser.php" role="php" />
+     </dir> <!-- /lib/Braintree/Xml -->
+     <file baseinstalldir="/" name="AddOn.php" role="php" />
+     <file baseinstalldir="/" name="AddOnGateway.php" role="php" />
+     <file baseinstalldir="/" name="Address.php" role="php" />
+     <file baseinstalldir="/" name="AddressGateway.php" role="php" />
+     <file baseinstalldir="/" name="AndroidPayCard.php" role="php" />
+     <file baseinstalldir="/" name="ApplePayCard.php" role="php" />
+     <file baseinstalldir="/" name="Base.php" role="php" />
+     <file baseinstalldir="/" name="ClientToken.php" role="php" />
+     <file baseinstalldir="/" name="ClientTokenGateway.php" role="php" />
+     <file baseinstalldir="/" name="CoinbaseAccount.php" role="php" />
+     <file baseinstalldir="/" name="Collection.php" role="php" />
+     <file baseinstalldir="/" name="Configuration.php" role="php" />
+     <file baseinstalldir="/" name="CredentialsParser.php" role="php" />
+     <file baseinstalldir="/" name="CreditCard.php" role="php" />
+     <file baseinstalldir="/" name="CreditCardGateway.php" role="php" />
+     <file baseinstalldir="/" name="CreditCardVerification.php" role="php" />
+     <file baseinstalldir="/" name="CreditCardVerificationGateway.php" role="php" />
+     <file baseinstalldir="/" name="CreditCardVerificationSearch.php" role="php" />
+     <file baseinstalldir="/" name="Customer.php" role="php" />
+     <file baseinstalldir="/" name="CustomerGateway.php" role="php" />
+     <file baseinstalldir="/" name="CustomerSearch.php" role="php" />
+     <file baseinstalldir="/" name="Descriptor.php" role="php" />
+     <file baseinstalldir="/" name="Digest.php" role="php" />
+     <file baseinstalldir="/" name="Disbursement.php" role="php" />
+     <file baseinstalldir="/" name="DisbursementDetails.php" role="php" />
+     <file baseinstalldir="/" name="Discount.php" role="php" />
+     <file baseinstalldir="/" name="DiscountGateway.php" role="php" />
+     <file baseinstalldir="/" name="Dispute.php" role="php" />
+     <file baseinstalldir="/" name="EqualityNode.php" role="php" />
+     <file baseinstalldir="/" name="EuropeBankAccount.php" role="php" />
+     <file baseinstalldir="/" name="Exception.php" role="php" />
+     <file baseinstalldir="/" name="Gateway.php" role="php" />
+     <file baseinstalldir="/" name="Http.php" role="php" />
+     <file baseinstalldir="/" name="Instance.php" role="php" />
+     <file baseinstalldir="/" name="IsNode.php" role="php" />
+     <file baseinstalldir="/" name="KeyValueNode.php" role="php" />
+     <file baseinstalldir="/" name="Merchant.php" role="php" />
+     <file baseinstalldir="/" name="MerchantAccount.php" role="php" />
+     <file baseinstalldir="/" name="MerchantAccountGateway.php" role="php" />
+     <file baseinstalldir="/" name="MerchantGateway.php" role="php" />
+     <file baseinstalldir="/" name="Modification.php" role="php" />
+     <file baseinstalldir="/" name="MultipleValueNode.php" role="php" />
+     <file baseinstalldir="/" name="MultipleValueOrTextNode.php" role="php" />
+     <file baseinstalldir="/" name="OAuthCredentials.php" role="php" />
+     <file baseinstalldir="/" name="OAuthGateway.php" role="php" />
+     <file baseinstalldir="/" name="PartialMatchNode.php" role="php" />
+     <file baseinstalldir="/" name="PartnerMerchant.php" role="php" />
+     <file baseinstalldir="/" name="PaymentInstrumentType.php" role="php" />
+     <file baseinstalldir="/" name="PaymentMethod.php" role="php" />
+     <file baseinstalldir="/" name="PaymentMethodGateway.php" role="php" />
+     <file baseinstalldir="/" name="PaymentMethodNonce.php" role="php" />
+     <file baseinstalldir="/" name="PaymentMethodNonceGateway.php" role="php" />
+     <file baseinstalldir="/" name="PayPalAccount.php" role="php" />
+     <file baseinstalldir="/" name="PayPalAccountGateway.php" role="php" />
+     <file baseinstalldir="/" name="Plan.php" role="php" />
+     <file baseinstalldir="/" name="PlanGateway.php" role="php" />
+     <file baseinstalldir="/" name="RangeNode.php" role="php" />
+     <file baseinstalldir="/" name="ResourceCollection.php" role="php" />
+     <file baseinstalldir="/" name="RiskData.php" role="php" />
+     <file baseinstalldir="/" name="SettlementBatchSummary.php" role="php" />
+     <file baseinstalldir="/" name="SettlementBatchSummaryGateway.php" role="php" />
+     <file baseinstalldir="/" name="SignatureService.php" role="php" />
+     <file baseinstalldir="/" name="Subscription.php" role="php" />
+     <file baseinstalldir="/" name="SubscriptionGateway.php" role="php" />
+     <file baseinstalldir="/" name="SubscriptionSearch.php" role="php" />
+     <file baseinstalldir="/" name="TestingGateway.php" role="php" />
+     <file baseinstalldir="/" name="TextNode.php" role="php" />
+     <file baseinstalldir="/" name="ThreeDSecureInfo.php" role="php" />
+     <file baseinstalldir="/" name="Transaction.php" role="php" />
+     <file baseinstalldir="/" name="TransactionGateway.php" role="php" />
+     <file baseinstalldir="/" name="TransactionSearch.php" role="php" />
+     <file baseinstalldir="/" name="TransparentRedirect.php" role="php" />
+     <file baseinstalldir="/" name="TransparentRedirectGateway.php" role="php" />
+     <file baseinstalldir="/" name="UnknownPaymentMethod.php" role="php" />
+     <file baseinstalldir="/" name="Util.php" role="php" />
+     <file baseinstalldir="/" name="Version.php" role="php" />
+     <file baseinstalldir="/" name="WebhookNotification.php" role="php" />
+     <file baseinstalldir="/" name="WebhookTesting.php" role="php" />
+     <file baseinstalldir="/" name="Xml.php" role="php" />
+    </dir> <!-- /lib/Braintree -->
+    <dir name="ssl">
+     <file baseinstalldir="/" name="api_braintreegateway_com.ca.crt" role="php" />
+    </dir> <!-- /lib/ssl -->
+    <file baseinstalldir="/" name="Braintree.php" role="php" />
+   </dir> <!-- /lib -->
+   <dir name="tests">
+    <dir name="Braintree">
+     <dir name="CreditCardNumbers">
+      <file baseinstalldir="/" name="CardTypeIndicators.php" role="test" />
+     </dir> <!-- /tests/Braintree/CreditCardNumbers -->
+     <dir name="fixtures">
+      <file baseinstalldir="/" name="composer_implementation.php" role="test" />
+     </dir> <!-- /tests/Braintree/fixtures -->
+     <file baseinstalldir="/" name="CreditCardDefaults.php" role="test" />
+     <file baseinstalldir="/" name="OAuthTestHelper.php" role="test" />
+    </dir> <!-- /tests/Braintree -->
+    <dir name="integration">
+     <dir name="Error">
+      <file baseinstalldir="/" name="ErrorCollectionTest.php" role="test" />
+      <file baseinstalldir="/" name="ValidationErrorCollectionTest.php" role="test" />
+     </dir> <!-- /tests/integration/Error -->
+     <dir name="Result">
+      <file baseinstalldir="/" name="ErrorTest.php" role="test" />
+     </dir> <!-- /tests/integration/Result -->
+     <file baseinstalldir="/" name="AddOnsTest.php" role="test" />
+     <file baseinstalldir="/" name="AddressTest.php" role="test" />
+     <file baseinstalldir="/" name="ClientTokenTest.php" role="test" />
+     <file baseinstalldir="/" name="CreditCardTest.php" role="test" />
+     <file baseinstalldir="/" name="CreditCardVerificationAdvancedSearchTest.php" role="test" />
+     <file baseinstalldir="/" name="CustomerAdvancedSearchTest.php" role="test" />
+     <file baseinstalldir="/" name="CustomerTest.php" role="test" />
+     <file baseinstalldir="/" name="DisbursementTest.php" role="test" />
+     <file baseinstalldir="/" name="DiscountTest.php" role="test" />
+     <file baseinstalldir="/" name="EuropeBankAccountTest.php" role="test" />
+     <file baseinstalldir="/" name="HttpClientApi.php" role="test" />
+     <file baseinstalldir="/" name="HttpTest.php" role="test" />
+     <file baseinstalldir="/" name="MerchantAccountTest.php" role="test" />
+     <file baseinstalldir="/" name="MerchantTest.php" role="test" />
+     <file baseinstalldir="/" name="MultipleValueNodeTest.php" role="test" />
+     <file baseinstalldir="/" name="OAuthTest.php" role="test" />
+     <file baseinstalldir="/" name="PaymentMethodNonceTest.php" role="test" />
+     <file baseinstalldir="/" name="PaymentMethodTest.php" role="test" />
+     <file baseinstalldir="/" name="PayPalAccountTest.php" role="test" />
+     <file baseinstalldir="/" name="PlanTest.php" role="test" />
+     <file baseinstalldir="/" name="SettlementBatchSummaryTest.php" role="test" />
+     <file baseinstalldir="/" name="SubscriptionSearchTest.php" role="test" />
+     <file baseinstalldir="/" name="SubscriptionTest.php" role="test" />
+     <file baseinstalldir="/" name="SubscriptionTestHelper.php" role="test" />
+     <file baseinstalldir="/" name="TestTransactionTest.php" role="test" />
+     <file baseinstalldir="/" name="TextNodeTest.php" role="test" />
+     <file baseinstalldir="/" name="TransactionAdvancedSearchTest.php" role="test" />
+     <file baseinstalldir="/" name="TransactionTest.php" role="test" />
+     <file baseinstalldir="/" name="TransparentRedirectTest.php" role="test" />
+    </dir> <!-- /tests/integration -->
+    <dir name="unit">
+     <dir name="ClientApi">
+      <file baseinstalldir="/" name="ClientTokenTest.php" role="test" />
+     </dir> <!-- /tests/unit/ClientApi -->
+     <dir name="Result">
+      <file baseinstalldir="/" name="ErrorTest.php" role="test" />
+      <file baseinstalldir="/" name="SuccessfulTest.php" role="test" />
+     </dir> <!-- /tests/unit/Result -->
+     <file baseinstalldir="/" name="AddOnTest.php" role="test" />
+     <file baseinstalldir="/" name="AddressTest.php" role="test" />
+     <file baseinstalldir="/" name="BraintreeTest.php" role="test" />
+     <file baseinstalldir="/" name="ConfigurationTest.php" role="test" />
+     <file baseinstalldir="/" name="CreditCardTest.php" role="test" />
+     <file baseinstalldir="/" name="CustomerTest.php" role="test" />
+     <file baseinstalldir="/" name="DigestTest.php" role="test" />
+     <file baseinstalldir="/" name="DisbursementDetailsTest.php" role="test" />
+     <file baseinstalldir="/" name="DisbursementTest.php" role="test" />
+     <file baseinstalldir="/" name="DiscountTest.php" role="test" />
+     <file baseinstalldir="/" name="GatewayTest.php" role="test" />
+     <file baseinstalldir="/" name="InstanceTest.php" role="test" />
+     <file baseinstalldir="/" name="MerchantAccountTest.php" role="test" />
+     <file baseinstalldir="/" name="MultipleValueNodeTest.php" role="test" />
+     <file baseinstalldir="/" name="MultipleValueOrTextNodeTest.php" role="test" />
+     <file baseinstalldir="/" name="OAuthTest.php" role="test" />
+     <file baseinstalldir="/" name="PaymentMethodTest.php" role="test" />
+     <file baseinstalldir="/" name="PayPalAccountTest.php" role="test" />
+     <file baseinstalldir="/" name="RangeNodeTest.php" role="test" />
+     <file baseinstalldir="/" name="ResourceCollectionTest.php" role="test" />
+     <file baseinstalldir="/" name="SanityTest.php" role="test" />
+     <file baseinstalldir="/" name="SubscriptionSearchTest.php" role="test" />
+     <file baseinstalldir="/" name="SubscriptionTest.php" role="test" />
+     <file baseinstalldir="/" name="TextNodeTest.php" role="test" />
+     <file baseinstalldir="/" name="TransactionTest.php" role="test" />
+     <file baseinstalldir="/" name="TransparentRedirectTest.php" role="test" />
+     <file baseinstalldir="/" name="UnknownPaymentMethodTest.php" role="test" />
+     <file baseinstalldir="/" name="UtilTest.php" role="test" />
+     <file baseinstalldir="/" name="WebhookNotificationTest.php" role="test" />
+     <file baseinstalldir="/" name="Xml_GeneratorTest.php" role="test" />
+     <file baseinstalldir="/" name="Xml_ParserTest.php" role="test" />
+    </dir> <!-- /tests/unit -->
+    <file baseinstalldir="/" name="SanityTest.php" role="test" />
+    <file baseinstalldir="/" name="TestHelper.php" role="test" />
+   </dir> <!-- /tests -->
+   <file baseinstalldir="/" name="CHANGELOG.md" role="doc" />
+   <file baseinstalldir="/" name="LICENSE" role="doc" />
+   <file baseinstalldir="/" name="phpunit.xml.dist" role="test" />
+   <file baseinstalldir="/" name="README.md" role="doc" />
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.3.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <extension>
+    <name>curl</name>
+   </extension>
+   <extension>
+    <name>dom</name>
+   </extension>
+   <extension>
+    <name>hash</name>
+   </extension>
+   <extension>
+    <name>openssl</name>
+   </extension>
+   <extension>
+    <name>xmlwriter</name>
+   </extension>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install as="Braintree/IsNode.php" name="lib/Braintree/IsNode.php" />
+   <install as="Braintree/WebhookTesting.php" name="lib/Braintree/WebhookTesting.php" />
+   <install as="Braintree/SubscriptionGateway.php" name="lib/Braintree/SubscriptionGateway.php" />
+   <install as="Braintree/Xml/Parser.php" name="lib/Braintree/Xml/Parser.php" />
+   <install as="Braintree/Xml/Generator.php" name="lib/Braintree/Xml/Generator.php" />
+   <install as="Braintree/Xml.php" name="lib/Braintree/Xml.php" />
+   <install as="Braintree/Customer.php" name="lib/Braintree/Customer.php" />
+   <install as="Braintree/Base.php" name="lib/Braintree/Base.php" />
+   <install as="Braintree/DisbursementDetails.php" name="lib/Braintree/DisbursementDetails.php" />
+   <install as="Braintree/Modification.php" name="lib/Braintree/Modification.php" />
+   <install as="Braintree/PartialMatchNode.php" name="lib/Braintree/PartialMatchNode.php" />
+   <install as="Braintree/DiscountGateway.php" name="lib/Braintree/DiscountGateway.php" />
+   <install as="Braintree/PaymentMethod.php" name="lib/Braintree/PaymentMethod.php" />
+   <install as="Braintree/EqualityNode.php" name="lib/Braintree/EqualityNode.php" />
+   <install as="Braintree/MultipleValueOrTextNode.php" name="lib/Braintree/MultipleValueOrTextNode.php" />
+   <install as="Braintree/Subscription.php" name="lib/Braintree/Subscription.php" />
+   <install as="Braintree/PayPalAccountGateway.php" name="lib/Braintree/PayPalAccountGateway.php" />
+   <install as="Braintree/AndroidPayCard.php" name="lib/Braintree/AndroidPayCard.php" />
+   <install as="Braintree/WebhookNotification.php" name="lib/Braintree/WebhookNotification.php" />
+   <install as="Braintree/Result/Error.php" name="lib/Braintree/Result/Error.php" />
+   <install as="Braintree/Result/CreditCardVerification.php" name="lib/Braintree/Result/CreditCardVerification.php" />
+   <install as="Braintree/Result/Successful.php" name="lib/Braintree/Result/Successful.php" />
+   <install as="Braintree/CreditCardVerificationGateway.php" name="lib/Braintree/CreditCardVerificationGateway.php" />
+   <install as="Braintree/Exception.php" name="lib/Braintree/Exception.php" />
+   <install as="Braintree/TransactionGateway.php" name="lib/Braintree/TransactionGateway.php" />
+   <install as="Braintree/Address.php" name="lib/Braintree/Address.php" />
+   <install as="Braintree/MerchantAccount.php" name="lib/Braintree/MerchantAccount.php" />
+   <install as="Braintree/Version.php" name="lib/Braintree/Version.php" />
+   <install as="Braintree/TransparentRedirectGateway.php" name="lib/Braintree/TransparentRedirectGateway.php" />
+   <install as="Braintree/PlanGateway.php" name="lib/Braintree/PlanGateway.php" />
+   <install as="Braintree/Http.php" name="lib/Braintree/Http.php" />
+   <install as="Braintree/TransparentRedirect.php" name="lib/Braintree/TransparentRedirect.php" />
+   <install as="Braintree/MerchantAccount/BusinessDetails.php" name="lib/Braintree/MerchantAccount/BusinessDetails.php" />
+   <install as="Braintree/MerchantAccount/AddressDetails.php" name="lib/Braintree/MerchantAccount/AddressDetails.php" />
+   <install as="Braintree/MerchantAccount/FundingDetails.php" name="lib/Braintree/MerchantAccount/FundingDetails.php" />
+   <install as="Braintree/MerchantAccount/IndividualDetails.php" name="lib/Braintree/MerchantAccount/IndividualDetails.php" />
+   <install as="Braintree/Error/Validation.php" name="lib/Braintree/Error/Validation.php" />
+   <install as="Braintree/Error/ErrorCollection.php" name="lib/Braintree/Error/ErrorCollection.php" />
+   <install as="Braintree/Error/Codes.php" name="lib/Braintree/Error/Codes.php" />
+   <install as="Braintree/Error/ValidationErrorCollection.php" name="lib/Braintree/Error/ValidationErrorCollection.php" />
+   <install as="Braintree/Exception/ServerError.php" name="lib/Braintree/Exception/ServerError.php" />
+   <install as="Braintree/Exception/InvalidSignature.php" name="lib/Braintree/Exception/InvalidSignature.php" />
+   <install as="Braintree/Exception/ValidationsFailed.php" name="lib/Braintree/Exception/ValidationsFailed.php" />
+   <install as="Braintree/Exception/Configuration.php" name="lib/Braintree/Exception/Configuration.php" />
+   <install as="Braintree/Exception/Authentication.php" name="lib/Braintree/Exception/Authentication.php" />
+   <install as="Braintree/Exception/SSLCertificate.php" name="lib/Braintree/Exception/SSLCertificate.php" />
+   <install as="Braintree/Exception/ForgedQueryString.php" name="lib/Braintree/Exception/ForgedQueryString.php" />
+   <install as="Braintree/Exception/InvalidChallenge.php" name="lib/Braintree/Exception/InvalidChallenge.php" />
+   <install as="Braintree/Exception/SSLCaFileNotFound.php" name="lib/Braintree/Exception/SSLCaFileNotFound.php" />
+   <install as="Braintree/Exception/DownForMaintenance.php" name="lib/Braintree/Exception/DownForMaintenance.php" />
+   <install as="Braintree/Exception/UpgradeRequired.php" name="lib/Braintree/Exception/UpgradeRequired.php" />
+   <install as="Braintree/Exception/Authorization.php" name="lib/Braintree/Exception/Authorization.php" />
+   <install as="Braintree/Exception/Unexpected.php" name="lib/Braintree/Exception/Unexpected.php" />
+   <install as="Braintree/Exception/TestOperationPerformedInProduction.php" name="lib/Braintree/Exception/TestOperationPerformedInProduction.php" />
+   <install as="Braintree/Exception/NotFound.php" name="lib/Braintree/Exception/NotFound.php" />
+   <install as="Braintree/Transaction/SubscriptionDetails.php" name="lib/Braintree/Transaction/SubscriptionDetails.php" />
+   <install as="Braintree/Transaction/StatusDetails.php" name="lib/Braintree/Transaction/StatusDetails.php" />
+   <install as="Braintree/Transaction/CoinbaseDetails.php" name="lib/Braintree/Transaction/CoinbaseDetails.php" />
+   <install as="Braintree/Transaction/AndroidPayCardDetails.php" name="lib/Braintree/Transaction/AndroidPayCardDetails.php" />
+   <install as="Braintree/Transaction/AddressDetails.php" name="lib/Braintree/Transaction/AddressDetails.php" />
+   <install as="Braintree/Transaction/CustomerDetails.php" name="lib/Braintree/Transaction/CustomerDetails.php" />
+   <install as="Braintree/Transaction/ApplePayCardDetails.php" name="lib/Braintree/Transaction/ApplePayCardDetails.php" />
+   <install as="Braintree/Transaction/CreditCardDetails.php" name="lib/Braintree/Transaction/CreditCardDetails.php" />
+   <install as="Braintree/Transaction/EuropeBankAccountDetails.php" name="lib/Braintree/Transaction/EuropeBankAccountDetails.php" />
+   <install as="Braintree/Transaction/PayPalDetails.php" name="lib/Braintree/Transaction/PayPalDetails.php" />
+   <install as="Braintree/Merchant.php" name="lib/Braintree/Merchant.php" />
+   <install as="Braintree/Configuration.php" name="lib/Braintree/Configuration.php" />
+   <install as="Braintree/KeyValueNode.php" name="lib/Braintree/KeyValueNode.php" />
+   <install as="Braintree/AddressGateway.php" name="lib/Braintree/AddressGateway.php" />
+   <install as="Braintree/PaymentMethodNonceGateway.php" name="lib/Braintree/PaymentMethodNonceGateway.php" />
+   <install as="Braintree/RangeNode.php" name="lib/Braintree/RangeNode.php" />
+   <install as="Braintree/PaymentInstrumentType.php" name="lib/Braintree/PaymentInstrumentType.php" />
+   <install as="Braintree/CreditCardGateway.php" name="lib/Braintree/CreditCardGateway.php" />
+   <install as="Braintree/CreditCardVerificationSearch.php" name="lib/Braintree/CreditCardVerificationSearch.php" />
+   <install as="Braintree/OAuthCredentials.php" name="lib/Braintree/OAuthCredentials.php" />
+   <install as="Braintree/Dispute.php" name="lib/Braintree/Dispute.php" />
+   <install as="Braintree/CustomerGateway.php" name="lib/Braintree/CustomerGateway.php" />
+   <install as="Braintree/Plan.php" name="lib/Braintree/Plan.php" />
+   <install as="Braintree/MerchantAccountGateway.php" name="lib/Braintree/MerchantAccountGateway.php" />
+   <install as="Braintree/Gateway.php" name="lib/Braintree/Gateway.php" />
+   <install as="Braintree/SubscriptionSearch.php" name="lib/Braintree/SubscriptionSearch.php" />
+   <install as="Braintree/AddOn.php" name="lib/Braintree/AddOn.php" />
+   <install as="Braintree/CreditCard.php" name="lib/Braintree/CreditCard.php" />
+   <install as="Braintree/Collection.php" name="lib/Braintree/Collection.php" />
+   <install as="Braintree/TransactionSearch.php" name="lib/Braintree/TransactionSearch.php" />
+   <install as="Braintree/Disbursement.php" name="lib/Braintree/Disbursement.php" />
+   <install as="Braintree/Descriptor.php" name="lib/Braintree/Descriptor.php" />
+   <install as="Braintree/MerchantGateway.php" name="lib/Braintree/MerchantGateway.php" />
+   <install as="Braintree/ClientToken.php" name="lib/Braintree/ClientToken.php" />
+   <install as="Braintree/PaymentMethodNonce.php" name="lib/Braintree/PaymentMethodNonce.php" />
+   <install as="Braintree/OAuthGateway.php" name="lib/Braintree/OAuthGateway.php" />
+   <install as="Braintree/TestingGateway.php" name="lib/Braintree/TestingGateway.php" />
+   <install as="Braintree/Discount.php" name="lib/Braintree/Discount.php" />
+   <install as="Braintree/CoinbaseAccount.php" name="lib/Braintree/CoinbaseAccount.php" />
+   <install as="Braintree/SignatureService.php" name="lib/Braintree/SignatureService.php" />
+   <install as="Braintree/Instance.php" name="lib/Braintree/Instance.php" />
+   <install as="Braintree/CreditCardVerification.php" name="lib/Braintree/CreditCardVerification.php" />
+   <install as="Braintree/Transaction.php" name="lib/Braintree/Transaction.php" />
+   <install as="Braintree/SettlementBatchSummary.php" name="lib/Braintree/SettlementBatchSummary.php" />
+   <install as="Braintree/Test/TransactionAmounts.php" name="lib/Braintree/Test/TransactionAmounts.php" />
+   <install as="Braintree/Test/MerchantAccount.php" name="lib/Braintree/Test/MerchantAccount.php" />
+   <install as="Braintree/Test/VenmoSdk.php" name="lib/Braintree/Test/VenmoSdk.php" />
+   <install as="Braintree/Test/Nonces.php" name="lib/Braintree/Test/Nonces.php" />
+   <install as="Braintree/Test/Transaction.php" name="lib/Braintree/Test/Transaction.php" />
+   <install as="Braintree/Test/CreditCardNumbers.php" name="lib/Braintree/Test/CreditCardNumbers.php" />
+   <install as="Braintree/EuropeBankAccount.php" name="lib/Braintree/EuropeBankAccount.php" />
+   <install as="Braintree/CredentialsParser.php" name="lib/Braintree/CredentialsParser.php" />
+   <install as="Braintree/Digest.php" name="lib/Braintree/Digest.php" />
+   <install as="Braintree/Util.php" name="lib/Braintree/Util.php" />
+   <install as="Braintree/ThreeDSecureInfo.php" name="lib/Braintree/ThreeDSecureInfo.php" />
+   <install as="Braintree/Dispute/TransactionDetails.php" name="lib/Braintree/Dispute/TransactionDetails.php" />
+   <install as="Braintree/PartnerMerchant.php" name="lib/Braintree/PartnerMerchant.php" />
+   <install as="Braintree/AddOnGateway.php" name="lib/Braintree/AddOnGateway.php" />
+   <install as="Braintree/PayPalAccount.php" name="lib/Braintree/PayPalAccount.php" />
+   <install as="Braintree/ApplePayCard.php" name="lib/Braintree/ApplePayCard.php" />
+   <install as="Braintree/ResourceCollection.php" name="lib/Braintree/ResourceCollection.php" />
+   <install as="Braintree/SettlementBatchSummaryGateway.php" name="lib/Braintree/SettlementBatchSummaryGateway.php" />
+   <install as="Braintree/ClientTokenGateway.php" name="lib/Braintree/ClientTokenGateway.php" />
+   <install as="Braintree/PaymentMethodGateway.php" name="lib/Braintree/PaymentMethodGateway.php" />
+   <install as="Braintree/MultipleValueNode.php" name="lib/Braintree/MultipleValueNode.php" />
+   <install as="Braintree/CustomerSearch.php" name="lib/Braintree/CustomerSearch.php" />
+   <install as="Braintree/UnknownPaymentMethod.php" name="lib/Braintree/UnknownPaymentMethod.php" />
+   <install as="Braintree/Subscription/StatusDetails.php" name="lib/Braintree/Subscription/StatusDetails.php" />
+   <install as="Braintree/TextNode.php" name="lib/Braintree/TextNode.php" />
+   <install as="Braintree/RiskData.php" name="lib/Braintree/RiskData.php" />
+   <install as="Braintree.php" name="lib/Braintree.php" />
+   <install as="Braintree/ssl/api_braintreegateway_com.ca.crt" name="lib/ssl/api_braintreegateway_com.ca.crt" />
+  </filelist>
+ </phprelease>
+ <changelog>
+  <release>
+   <version>
+    <release>3.5.0</release>
+    <api>3.5.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>stable</api>
+   </stability>
+   <date>2015-09-23</date>
+   <license uri="https://github.com/braintree/braintree_php/blob/master/LICENSE">MIT License</license>
+   <notes>
+Mirror official release.
+   </notes>
+  </release>
+ </changelog>
+</package>

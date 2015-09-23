@@ -254,7 +254,7 @@ class Braintree_Configuration
      */
     public function caFile($sslPath = NULL)
     {
-        $sslPath = $sslPath ? $sslPath : DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR .
+        $sslPath = $sslPath ? $sslPath : DIRECTORY_SEPARATOR .
                    'ssl' . DIRECTORY_SEPARATOR;
 
         $caPath = realpath(
