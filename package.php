@@ -50,8 +50,14 @@ $release_state   = 'alpha';
 $release_notes   = 'Mirror official release.';
 
 $description =
-	'The Braintree PHP library provides integration access to the '.
-	'Braintree Gateway.';
+	"The Braintree PHP library provides integration access to the " .
+	"Braintree Gateway.\n" .
+	"\n".
+	"This package contains the latest version of the SDK modified " .
+	"slightly for installation as a PEAR package. Modifications are:" .
+	" - reduce required PHP version - the tests require PHP 5.4 but " .
+	"   the SDK itself runs fine on PHP 5.3.\n" .
+	" - adjust the installation directories to match PSR-0.\n";
 
 $package = new PEAR_PackageFileManager2();
 
