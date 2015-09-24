@@ -61,7 +61,8 @@ class Braintree_OAuthGateway
 
     public function _mapError($result)
     {
-        $error = $result->errors->deepAll()[0];
+        $errors = $result->errors->deepAll();
+        $error = $errors[0];
 
         if ($error->code == Braintree_Error_Codes::OAUTH_INVALID_GRANT) {
             $result->error = 'invalid_grant';
@@ -70,7 +71,8 @@ class Braintree_OAuthGateway
         } else if ($error->code == Braintree_Error_Codes::OAUTH_INVALID_SCOPE) {
             $result->error = 'invalid_scope';
         }
-        $result->errorDescription = explode(': ', $error->message)[1];
+        $descriptions = explode(': ', $error->message);
+        $result->errorDescription = $descriptions[1];
         return $result;
     }
 
